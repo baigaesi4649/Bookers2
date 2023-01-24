@@ -1,16 +1,19 @@
-<h1>welcome to Bookers !!</h1>
+<div>
+  <%= flash[:notice] %>
+</div>
 
-<p>In Bookers,<br>
+<div class="container">
+ <div class="row">
+  <div class="mx-auto">
+   <h1>welcome to <i class="fas fa-book"></i>
+   <strong>Bookers</strong>!!</h1>
 
-you can share and exchange your opinions , inpressions , and emotions<br>
+   <p>In <i class="fas fa-book"></i><strong>Bookers</strong>,<br>
+   you can share and exchange your opinions , inpressions , and emotions<br>
+   about various books!</p>
 
-about various books!</p>
-
- <li>
-  <%= link_to "Log in", new_user_session_path %>
- </li>
- 
- <li>
-  <%= link_to "Sign up", new_user_registration_path %>
- </li>
- 
+   <%= link_to "Log in" ,new_user_session_path,class: "btn btn-info btn-lg btn-block btn-sm" %>
+   <%= link_to "Sign up",new_user_registration_path, class: "btn btn-success btn-lg btn-block btn-sm" %>
+  </div>
+ </div>
+</div>
